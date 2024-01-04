@@ -1,0 +1,16 @@
+version: "3.6"
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2-openssl
+    ports:
+      - 1883:1883
+    networks:
+      - test_performance
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+networks:
+  test_performance:
+    name: test_performance
+    driver: bridge

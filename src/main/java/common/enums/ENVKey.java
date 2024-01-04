@@ -1,0 +1,11 @@
+package common.enums;
+
+public enum ENVKey {
+    IOT_NODE_USERNAME,
+    IOT_NODE_PASSWORD,
+    BROKER_STRING,
+    IOT_NODE_CLIENT_ID,
+    IOT_GATEWAY_USERNAME,
+    IOT_GATEWAY_PASSWORD,
+    IOT_GATEWAY_CLIENT_ID,
+}
